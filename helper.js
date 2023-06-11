@@ -1,6 +1,6 @@
 exports.calculateTimeTaken = (endTime) => {
-  const executionTime = endTime[0] * 1000 + endTime[1] / 1000000; // Convert to milliseconds
-  const executionTimeInSeconds = executionTime / 1000; // Convert to seconds
+  const executionTime = endTime[0] * 1000 + endTime[1] / 1000000;
+  const executionTimeInSeconds = executionTime / 1000;
   const minutes = Math.floor(executionTimeInSeconds / 60);
   const seconds = Math.round(executionTimeInSeconds % 60);
   return `Time to process: ${minutes} minutes ${seconds} seconds\n`;
